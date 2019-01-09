@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@redirectToIndex');
+
+Route::get('/main', 'PagesController@redirectToMainPage');
+
+Route::get('/event', 'PagesController@redirectToEventPage');
+
+Route::get('/student', 'PagesController@redirectToStudentPage');
+
+Route::get('/student-portal', 'PagesController@redirectToStudentPortal');
+
+Route::get('/organizer', 'PagesController@redirectToOrganizerPage');
+
+Route::get('/organizer-portal', 'PagesController@redirectToOrganizerPortal');
+
+Route::get('/about', 'PagesController@redirectToAboutUsPage');
