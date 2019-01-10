@@ -1,0 +1,30 @@
+/* Footer */
+.portal-footer-bar {
+    border-top: 5px solid #fda400;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    list-style-type: none;
+}
+
+.portal-footer-bar li {
+    float: left;
+    font-size: 13px;
+}
+
+.portal-footer-bar li a {
+    display: block;
+    color: #fff !important;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+}
+
+.portal-footer-bar li a:hover {
+    background-color: #111;
+}
+
+#footer-logo {
+    color: #fda400 !important;
+}

@@ -1,0 +1,54 @@
+/* Image Blur Logo */
+.background-logo::after {
+    content:'';
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../public/pics/background-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+}
+
+.background-logo:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.background-logo:hover .background-logo-content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.background-logo-content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+    color: white !important;
+    font-weight: bold;
+}
+
+.background-logo-content .logo-image {
+    height: 150px;
+    width: 150px;
+}
+
+.background-logo-content .logo-title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.background-logo-content .logo-text {
+    line-height: 1.7;
+    margin-top: 1rem;
+}

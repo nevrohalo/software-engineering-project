@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;       
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Portal */
+#portal-wrapper-id {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.portal-layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.portal-layer .portal-layer-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.portal-layer .portal-layer-body, .portal-layer .portal-layer-note  {
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.portal-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.portal-layer-bottom {
+    background: #222;
+    background-image: url("../../public/pics/background-portal-dark.png");
+    z-index: 1;
+}
+
+.portal-layer-bottom .portal-layer-body {
+    right: 5%;
+}
+
+.portal-layer-bottom .portal-layer-note {
+    left: 5%;
+}
+
+.portal-layer-bottom h2 a {
+    color: #fff;
+}
+
+.portal-layer-top {
+    width: 50vw;
+    background: #eee;                
+    background-image: url("../../public/pics/background-portal-light.png");
+    color: #222;
+    z-index: 2;
+}
+
+.portal-layer-top .portal-layer-body {
+    left: 5%;
+    color: #222;
+}   
+
+.portal-layer-top .portal-layer-note {
+    right: 5%;
+    color: #222;
+}
+
+.portal-layer-top h2 a {
+    color: #222;
+}
+
+.portal-handle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 5px;
+    height: 100%;
+    background-color: #fda400;
+    z-index: 3;
+}
+
+.portal .portal-handle {
+    top: 50%;
+    height: 200%;
+    transform: rotate(30deg) translateY(-50%);
+    transform-origin: top;
+}
+
+.portal .portal-layer-top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.portal .portal-layer-top .portal-layer-wrap {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+@media(max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+}
