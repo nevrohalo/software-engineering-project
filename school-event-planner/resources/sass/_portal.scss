@@ -3,10 +3,10 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;       
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    //background-color: rgba(0, 0, 0, 0.9);
 }
-
+  
 /* Portal */
 #portal-wrapper-id {
     position: relative;
@@ -66,7 +66,7 @@ body {
 
 .portal-layer-top {
     width: 50vw;
-    background: #eee;                
+    background: #eee;
     background-image: url("../../public/pics/background-portal-light.png");
     color: #222;
     z-index: 2;

@@ -1,0 +1,205 @@
+.portal-student {
+    background: url("../../public/pics/background-portal-light.png");
+    background-color: rgba(225, 225, 225, 0.9) !important;
+    background-size: cover;
+}
+
+.portal-organizer {
+    background: url("../../public/pics/background-portal-dark.png");
+    background-size: cover;
+}
+
+.login-wrapper {
+    border-radius: 15px;
+    width: 320px;
+    height: 420px;
+    padding: 70px 30px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.portal-student .login-wrapper {
+    background: rgba(0, 0, 0, 0.85);
+    color: rgb(255, 255, 255);
+}
+
+.portal-organizer .login-wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
+}
+
+.login-wrapper p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login-wrapper h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-wrapper input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-wrapper input[type = "text"], input[type = "password"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.portal-student .login-wrapper input[type = "text"], 
+.portal-student .login-wrapper input[type = "password"] {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.portal-organizer .login-wrapper input[type = "text"], 
+.portal-organizer .login-wrapper input[type = "password"] {
+    border-bottom: 1px solid rgb(55, 55, 55);
+}
+
+.login-wrapper input[type = "submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.portal-student input[type = "submit"] {
+    background: #fda400;
+}
+
+.portal-organizer input[type = "submit"] {
+    background: rgb(0, 158, 158);
+}
+
+.login-wrapper input[type = "submit"]:hover {
+    cursor: pointer;
+    background: rgb(160, 215, 0);
+    color: rgb(36, 49, 60);
+}
+
+.login-links {
+    text-align: justify;
+}
+
+.login-wrapper a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.portal-student .login-wrapper a {
+    color: rgb(255, 255, 255);
+}
+
+.portal-organizer .login-wrapper a {
+    color: rgb(0, 0, 0);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+
+// .login-wrapper {
+//     border-radius: 15px;
+//     width: 320px;
+//     height: 420px;
+//     padding: 70px 30px;
+//     top: 50%;
+//     left: 50%;
+//     position: absolute;
+//     transform: translate(-50%, -50%);
+//     box-sizing: border-box;
+// }
+
+// /*.portal-student*/ .login-wrapper {
+//     background: rgba(0, 0, 0, 0.85);
+//     color: rgb(255, 255, 255);
+// }
+
+// .portal-organizer .login-wrapper {
+//     background: rgba(255, 255, 255, 0.75);
+//     color: rgb(0, 0, 0);
+// }
+
+// .login-wrapper p {
+//     margin: 0;
+//     padding: 0;
+//     font-weight: bold;
+// }
+
+// .login-wrapper h1 {
+//     margin: 0;
+//     padding: 0 0 20px;
+//     text-align: center;
+//     font-size: 22px;
+// }
+
+// .login-wrapper input, .login-wrapper button {
+//     width: 100%;
+//     margin-bottom: 20px;
+// }
+    
+
+// .login-wrapper input[type = "email"], input[type = "password"] {
+//     border: none;
+//     background: transparent;
+//     outline: none;
+//     height: 40px;
+//     color: rgb(255, 255, 255);
+//     font-size: 16px;
+// }
+
+// .portal-student .login-wrapper input[type = "email"], 
+// .portal-student .login-wrapper input[type = "password"] {
+//     border-bottom: 1px solid rgb(255, 255, 255);
+// }
+
+// .portal-organizer .login-wrapper input[type = "email"], 
+// .portal-organizer .login-wrapper input[type = "password"] {
+//     border-bottom: 1px solid rgb(55, 55, 55);
+// }
+
+// .login-wrapper button[type = "submit"] {
+//     border: none;
+//     outline: none;
+//     height: 40px;
+//     color: #fff;
+//     font-size: 18px;
+//     border-radius: 20px;
+// }
+
+// .portal-student button[type = "submit"] {
+//     background-color: #fda400;
+// }
+
+// .portal-organizer button[type = "submit"] {
+//     background-color: rgb(0, 158, 158);
+// }
+
+// .avatar {
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: -50px;
+//     left: calc(50% - 50px);
+// }

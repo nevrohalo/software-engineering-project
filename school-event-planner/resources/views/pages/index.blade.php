@@ -6,11 +6,12 @@
         <div class="portal-layer portal-layer-bottom">
             <div class="portal-layer-wrap">
                 <div class="portal-layer-body">
-                    <h2>Organizer Portal</h2>
-                    <p>Log in through our organizer portal</p>
+                    <h2>Sign Up</h2>
+                    <p>Don't have an account?</p>
                 </div>
                 <div class="portal-layer-note">
-                    <h2><a href="/organizer-portal">Click Here</a></h2>
+                    {{-- <h2><a href="/organizer-portal">Click Here</a></h2> --}}
+                    <h2><a href="/register">Click Here</a></h2>
                 </div>
                 <img class="portal-image" src="../pics/organizer-login-icon.png" alt="Icon not found">
             </div>        
@@ -19,11 +20,12 @@
         <div class="portal-layer portal-layer-top">
             <div class="portal-layer-wrap">
                 <div class="portal-layer-body">
-                    <h2>Student Portal</h2>
-                    <p>Log in through our student portal</p>
+                    <h2>Sign In</h2>
+                    <p>Already have an account?</p>
                 </div>
                 <div class="portal-layer-note">
-                    <h2><a href="/student-portal">Click Here</a></h2>
+                    {{-- <h2><a href="/student-portal">Click Here</a></h2> --}}
+                    <h2><a href="/login">Click Here</a></h2>
                 </div>
                 <img class="portal-image" src="../pics/student-login-icon.png" alt="Icon not found">
             </div>
@@ -36,8 +38,10 @@
     <div class="portal-footer">
         <ul class="portal-footer-bar">
             <li><a id="footer-logo" href="https://github.com/nevrohalo/software-engineering-project" target="_blank">School Event Planner by Nevro Halo</a></li>
-            <li><a href="/student-portal">Student Portal</a></li>
-            <li><a href="/organizer-portal">Organizer Portal</a></li>
+            {{-- <li><a href="/student-portal">Student Portal</a></li> --}}
+            <li><a href="/login">Sign In</a></li>
+            {{-- <li><a href="/organizer-portal">Organizer Portal</a></li> --}}
+            <li><a href="/register">Sign Up</a></li>
             <li><a href="/about">About Us</a></li>
         </ul>
     </div>

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>{{config('app.name'), "School Event Planner"}} - {{$title}}</title>
     </head>
-    <body>
+    <body class="{{$identifier}}">
         @yield('content')
     </body>
 </html>

@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@redirectToIndex');
 
-Route::get('/main', 'PagesController@redirectToMainPage');
+//Route::resource('/main', 'EventsController');
 
 Route::get('/event', 'PagesController@redirectToEventPage');
 
@@ -26,3 +26,7 @@ Route::get('/organizer', 'PagesController@redirectToOrganizerPage');
 Route::get('/organizer-portal', 'PagesController@redirectToOrganizerPortal');
 
 Route::get('/about', 'PagesController@redirectToAboutUsPage');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
