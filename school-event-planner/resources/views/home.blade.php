@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-11">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Organized Events</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,35 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    @if (count($events) > 0)
+                        <table class="table table-striped">
+                            <tr>
+                                <th style="width: 80%">Title</th>
+                                <th style="text-align: center">Edit</th>
+                                <th style="text-align: center">Delete</th>
+                            </tr>
+                            @foreach($events as $event)
+                                <tr>
+                                    <td><a href="/events/{{$event->id}}">{{$event->name}}</a></td>
+                                    <td style="text-align: center">
+                                        <div>
+                                            <a href="/events/{{$event->id}}/edit" class="btn btn-success">Edit</a>
+                                        </div>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <div>
+                                            {!!Form::open(['action' => ['EventsController@destroy', $event->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                                                {{Form::hidden('_method', 'DELETE')}}
+                                                {{Form::submit('Delete', ['class' => 'btn btn-danger mx-1'])}}
+                                            {!!Form::close()!!}
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    @else
+                        <h4>No events organized yet.</h4>
+                    @endif
                 </div>
             </div>
         </div>

@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <title>{{config('app.name'), "School Event Planner"}} - {{$title}}</title>
+        {{-- <title>{{config('app.name'), "School Event Planner"}} - {{$title}}</title> --}}
+        <title>{{config('app.name'), "School Event Planner"}}</title>
     </head>
-    <body class="{{$identifier}}">
-        @yield('content')
+    {{-- <body class="{{$identifier}}"> --}}
+    <body>
+            @yield('content')
     </body>
 </html>

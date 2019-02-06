@@ -7,18 +7,19 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function redirectToIndex() {
-        $title = 'Index';
-        return view('pages/index')->with('title', $title);
+        $data = array(
+            'title' => 'Index',
+            'identifier' => 'index'
+        );
+        return view('pages/index')->with($data);
     }
 
     public function redirectToMainPage() {
-        $title = 'Main';
-        return view('pages/main')->with('title', $title);
-    }
-
-    public function redirectToEventPage() {
-        $title = 'Event';
-        return view('pages/event')->with('title', $title);
+        $data = array(
+            'title' => 'Main',
+            'identifier' => 'main'
+        );
+        return view('pages/main')->with($data);
     }
 
     public function redirectToStudentPage() {
@@ -27,8 +28,11 @@ class PagesController extends Controller
     }
 
     public function redirectToStudentPortal() {
-        $title = 'Student Portal';
-        return view('pages/student-portal')->with('title', $title);
+        $data = array(
+            'title' => 'Student Portal',
+            'identifier' => 'portal-student'
+        );
+        return view('pages/student-portal')->with($data);
     }
 
     public function redirectToOrganizerPage() {
@@ -37,12 +41,18 @@ class PagesController extends Controller
     }
 
     public function redirectToOrganizerPortal() {
-        $title = 'Organizer Portal';
-        return view('pages/organizer-portal')->with('title', $title);
+        $data = array(
+            'title' => 'Organizer Portal',
+            'identifier' => 'portal-organizer'
+        );
+        return view('pages/organizer-portal')->with($data);
     }
 
     public function redirectToAboutUsPage() {
-        $title = 'About Us';
-        return view('pages/about')->with('title', $title);
+        $data = array(
+            'title' => 'About Us',
+            'identifier' => 'about'
+        );
+        return view('pages/about')->with($data);
     }
 }

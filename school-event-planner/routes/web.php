@@ -13,9 +13,7 @@
 
 Route::get('/', 'PagesController@redirectToIndex');
 
-//Route::resource('/main', 'EventsController');
-
-Route::get('/event', 'PagesController@redirectToEventPage');
+Route::resource('/events', 'EventsController');
 
 Route::get('/student', 'PagesController@redirectToStudentPage');
 

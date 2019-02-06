@@ -17,7 +17,6 @@
     
     <div class="login-links">
         <p id="simple">Don't have an account? <a href="/">Sign Up.</a></p><br>
-        <p id="simple">Not an organizer? <a href="/organizer-portal">Sign in as Student.</a></p><br>
     </div>
 </div>
 @endsection
