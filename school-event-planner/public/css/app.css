@@ -10491,13 +10491,16 @@ a.text-dark:focus {
 }
 
 .header-navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  background-color: #222;
+  border-bottom: 1px solid #fda400;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  padding: 4px;
 }
 
-.header-navbar .container a {
+.header-navbar a {
   color: #fda400;
+  margin-left: 6px;
 }
 
 /* Image Blur Logo */
@@ -10716,131 +10719,5 @@ body {
   body {
     font-size: 75%;
   }
-}
-
-.portal-student {
-  background: url(/images/background-portal-light.png?bc0182b53494fb918629815ce691c56f);
-  background-color: rgba(225, 225, 225, 0.9) !important;
-  background-size: cover;
-}
-
-.portal-organizer {
-  background: url(/images/background-portal-dark.png?6fb6a5fe8e52bd0fac35f6b2a80a6aa5);
-  background-size: cover;
-}
-
-.login-wrapper {
-  border-radius: 15px;
-  width: 320px;
-  height: 420px;
-  padding: 70px 30px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  box-sizing: border-box;
-}
-
-.portal-student .login-wrapper {
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-}
-
-.portal-organizer .login-wrapper {
-  background: rgba(255, 255, 255, 0.75);
-  color: black;
-}
-
-.login-wrapper p {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-}
-
-.login-wrapper h1 {
-  margin: 0;
-  padding: 0 0 20px;
-  text-align: center;
-  font-size: 22px;
-}
-
-.login-wrapper input {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.login-wrapper input[type=text],
-input[type=password] {
-  border: none;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: white;
-  font-size: 16px;
-}
-
-.portal-student .login-wrapper input[type=text],
-.portal-student .login-wrapper input[type=password] {
-  border-bottom: 1px solid white;
-}
-
-.portal-organizer .login-wrapper input[type=text],
-.portal-organizer .login-wrapper input[type=password] {
-  border-bottom: 1px solid #373737;
-}
-
-.login-wrapper input[type=submit] {
-  border: none;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-}
-
-.portal-student input[type=submit] {
-  background: #fda400;
-}
-
-.portal-organizer input[type=submit] {
-  background: #009e9e;
-}
-
-.login-wrapper input[type=submit]:hover {
-  cursor: pointer;
-  background: #a0d700;
-  color: #24313c;
-}
-
-.login-links {
-  text-align: justify;
-}
-
-.login-wrapper a {
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.portal-student .login-wrapper a {
-  color: white;
-}
-
-.portal-organizer .login-wrapper a {
-  color: black;
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
-}
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
