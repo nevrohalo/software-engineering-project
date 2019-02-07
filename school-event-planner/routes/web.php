@@ -13,9 +13,15 @@
 
 Route::get('/', 'PagesController@redirectToIndex');
 
+Route::get('/about', 'PagesController@redirectToAboutUsPage');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::resource('/events', 'EventsController');
 
 Route::resource('/enrollments', 'EnrollmentsController');
+
+Auth::routes();
 
 // Route::get('/student', 'PagesController@redirectToStudentPage');
 
@@ -24,9 +30,3 @@ Route::resource('/enrollments', 'EnrollmentsController');
 // Route::get('/organizer', 'PagesController@redirectToOrganizerPage');
 
 // Route::get('/organizer-portal', 'PagesController@redirectToOrganizerPortal');
-
-Route::get('/about', 'PagesController@redirectToAboutUsPage');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
