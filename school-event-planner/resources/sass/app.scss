@@ -14,3 +14,8 @@
 @import 'footer';
 @import 'portal';
 @import 'login';
+
+#band-aid-solution {
+    pointer-events: none;
+    opacity: 0.4;
+}

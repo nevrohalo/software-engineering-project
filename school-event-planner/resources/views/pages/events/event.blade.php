@@ -34,13 +34,23 @@
             @if(!$event::isUserEnrolled($event))
                 {!!Form::open(['action' => 'EnrollmentsController@store'])!!}
                     {{Form::hidden('event_id', $event->id)}}
-                    {{Form::submit('Enroll', ['class' => 'btn btn-success', 'style' => 'width: 100%'])}}
+                    {{Form::submit('Enroll', ['class' => 'btn btn-success', 'style' => 'width: 100%;'])}}
                 {!!Form::close()!!}
-            @else 
-                {!!Form::open(['action' => ['EnrollmentsController@destroy', $event->id], 'method' => 'POST'])!!}
-                    {{Form::hidden('_method', 'DELETE')}}
-                    {{Form::submit('Unenroll', ['class' => 'btn btn-danger', 'style' => 'width: 100%'])}}
-                {!!Form::close()!!}
+            @else
+                <div class="row p-0">
+                    <div id="band-aid-solution" class="col-6 my-0">
+                        {!!Form::open(['action' => ['EnrollmentsController@update', $event->id], 'method' => 'POST'])!!}
+                            {{Form::hidden('_method', 'PUT')}}
+                            {{Form::submit('Check In', ['class' => 'btn btn-warning btn-block'])}}
+                        {!!Form::close()!!}
+                    </div>
+                    <div class="col-6 my-o">
+                        {!!Form::open(['action' => ['EnrollmentsController@destroy', $event->id], 'method' => 'POST'])!!}
+                            {{Form::hidden('_method', 'DELETE')}}
+                            {{Form::submit('Unenroll', ['class' => 'btn btn-danger btn-block'])}}
+                        {!!Form::close()!!}
+                    </div>
+                </div>
             @endif
         </div>
     </div>

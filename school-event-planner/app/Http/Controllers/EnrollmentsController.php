@@ -76,7 +76,11 @@ class EnrollmentsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $enrollment = Enrollment::where('user_id', '=', auth()->user()->id)->where('event_id', '=', $id)->first();
+        $enrollment->checked_in = true;
+        $enrollment->save();
+
+        return redirect('events/'.$id)->with('success', 'You unenrolled from the event!');
     }
 
     /**
