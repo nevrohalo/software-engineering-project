@@ -37,7 +37,10 @@
                     {{Form::submit('Enroll', ['class' => 'btn btn-success', 'style' => 'width: 100%'])}}
                 {!!Form::close()!!}
             @else 
-                <div class="alert alert-info" role="alert" style="text-align: center;">ENROLLED</div>
+                {!!Form::open(['action' => ['EnrollmentsController@destroy', $event->id], 'method' => 'POST'])!!}
+                    {{Form::hidden('_method', 'DELETE')}}
+                    {{Form::submit('Unenroll', ['class' => 'btn btn-danger', 'style' => 'width: 100%'])}}
+                {!!Form::close()!!}
             @endif
         </div>
     </div>

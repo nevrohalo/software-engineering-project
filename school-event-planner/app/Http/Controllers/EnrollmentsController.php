@@ -42,7 +42,7 @@ class EnrollmentsController extends Controller
         $enrollment->checked_in = false;        
         $enrollment->save();
 
-        return redirect('events/'.$event_id)->with('success', 'You are enrolled to this event');
+        return redirect('events/'.$event_id)->with('success', 'You enrolled to the event!');
     }
 
     /**
@@ -87,6 +87,9 @@ class EnrollmentsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $enrollment = Enrollment::where('user_id', '=', auth()->user()->id)->where('event_id', '=', $id);
+        $enrollment->delete();
+
+        return redirect('events/'.$id)->with('success', 'You unenrolled from the event!');
     }
 }
