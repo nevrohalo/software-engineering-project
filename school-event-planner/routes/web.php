@@ -15,13 +15,15 @@ Route::get('/', 'PagesController@redirectToIndex');
 
 Route::resource('/events', 'EventsController');
 
-Route::get('/student', 'PagesController@redirectToStudentPage');
+Route::resource('/enrollments', 'EnrollmentsController');
 
-Route::get('/student-portal', 'PagesController@redirectToStudentPortal');
+// Route::get('/student', 'PagesController@redirectToStudentPage');
 
-Route::get('/organizer', 'PagesController@redirectToOrganizerPage');
+// Route::get('/student-portal', 'PagesController@redirectToStudentPortal');
 
-Route::get('/organizer-portal', 'PagesController@redirectToOrganizerPortal');
+// Route::get('/organizer', 'PagesController@redirectToOrganizerPage');
+
+// Route::get('/organizer-portal', 'PagesController@redirectToOrganizerPortal');
 
 Route::get('/about', 'PagesController@redirectToAboutUsPage');
 

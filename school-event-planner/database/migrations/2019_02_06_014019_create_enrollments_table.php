@@ -14,10 +14,10 @@ class CreateEnrollmentsTable extends Migration
     public function up()
     {
         Schema::create('enrollments', function (Blueprint $table) {
-            $table->increments('id');
             $table->integer('user_id');
             $table->integer('event_id');
-            $table->boolean('enrolled');
+            $table->primary(['user_id', 'event_id']);
+            $table->boolean('checked_in');
             $table->timestamps();
         });
     }

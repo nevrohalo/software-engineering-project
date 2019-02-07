@@ -78,6 +78,7 @@ class EventsController extends Controller
         $event->description = $request->input('description');
         $event->capacity = $request->input('capacity');
         $event->save();
+        
         $data = array(
             'success' => 'Event Updated',
             'event' => $event
