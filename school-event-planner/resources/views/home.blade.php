@@ -17,13 +17,15 @@
                     @if (count($events) > 0)
                         <table class="table table-striped">
                             <tr>
-                                <th style="width: 80%">Title</th>
+                                <th style="width: 75%">Title</th>
+                                <th style="width: 15%">Participations</th>
                                 <th style="text-align: center">Edit</th>
                                 <th style="text-align: center">Delete</th>
                             </tr>
                             @foreach($events as $event)
                                 <tr>
                                     <td><a href="/events/{{$event->id}}">{{$event->name}}</a></td>
+                                    <td><strong>{{$event->enrollments()->count()}}</strong></td>
                                     <td style="text-align: center">
                                         <div>
                                             <a href="/events/{{$event->id}}/edit" class="btn btn-success">Edit</a>

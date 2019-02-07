@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md header-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{url('/')}}">{{config('app.name', 'School Event Planner')}}</a>
+        <a class="navbar-brand" href="{{url('/about')}}">{{config('app.name', 'School Event Planner')}}</a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,6 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li>
-                    <a href="/">Index</a>
                     <a href="/home">Home</a>
                     <a href="/events">Events</a>
                 </li>
