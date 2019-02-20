@@ -41,7 +41,7 @@ class EventsController extends Controller
         $event->user_id = auth()->user()->id;
         $event->save();
 
-        return redirect('/pages/events/events')->with('success', 'Event Created');
+        return redirect('/events')->with('success', 'Event Created');
 
     }
     
